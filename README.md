@@ -1,4 +1,4 @@
-# 🚀 Apache Configuration Setup for Production SPA
+# Apache Configuration Setup for Production SPA
 
 ### I've updated the guideline to clarify that it is used for testing a production-like environment locally on Windows 11
 
@@ -43,7 +43,7 @@ scp -r dist/ user@your-server:/var/www/html/your-angular-app
 
 ## 3. Configure Apache for Angular Routing  
 
-### **🔹 Edit Apache VirtualHost Configuration**  
+### **Edit Apache VirtualHost Configuration**  
 Modify the Apache configuration file (`httpd-vhosts.conf` or `httpd.conf`) to include:
 
 ```apache
@@ -68,7 +68,7 @@ Modify the Apache configuration file (`httpd-vhosts.conf` or `httpd.conf`) to in
 </VirtualHost>
 ```
 
-### **🔹 Enable `mod_rewrite` (If Not Already Enabled)**  
+### **Enable `mod_rewrite` (If Not Already Enabled)**  
 - **For Laragon (Windows)**:  
   - Open Laragon → Go to **Apache Modules** → Enable **`mod_rewrite`**  
 - **For Manual Setup (httpd.conf)**:  
@@ -100,9 +100,9 @@ Once deployed, open your browser and visit:
 ```
 http://your-angular-app.test
 ```
-Check if:
-👉 The homepage loads correctly.  
-👉 Internal routes (`/dashboard`, `/property/9888`) **work without 404 errors**.  
+Check if :-
+- The homepage loads correctly.
+- Internal routes (`/dashboard`, `/property/9888`) **work without 404 errors**.  
 
 ### **Troubleshooting**
 - If navigation fails, **clear the browser cache** (`Ctrl + Shift + R`).
